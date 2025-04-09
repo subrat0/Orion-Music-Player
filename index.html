@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+<!-- xmlns="http://www.w3.org/2000/svg" -->
+
+<body>
+    <div class="container">
+
+        <div class="left-side">
+            <div class="home ">
+                <div class="logo">
+                    <img class="loogo" src="img/orianlogo.png" alt="Orian">
+                    <img id="closeleftbar" class="closeleftbar" src="img/close.svg" alt="">
+                </div>
+                <ul class="bg-light home-search border-radius">
+                    <li> <img src="img/home.svg" alt="Home"> Home</li>
+                    <li> <img src="img/search.svg" alt="Search"> Search</li>
+                </ul>
+            </div>
+            <div class="library bg-light border-radius">
+                <div class="heading flex-center">
+                    <img class="white libimg" src="img/library.png" alt="library">
+                    <h2>Playlist All Songs</h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <a href="otherfiles/legal.html">Legal</a>
+                    <a href="#">Safety & Privacy Center</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                    <br>
+                    <a href="#">About Ads</a>
+                    <a href="#">Accessibility</a>
+
+                    <div class="cookies">Cookies</div>
+
+                    <div class="language">
+                        <img class="white" src="img/earth.png" alt="Language Icon">
+                        <span>English</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <nav>
+                <div class="nav-data">
+                    <div class="navfeatures flex">
+                        <div class="hamburger">
+                            <img id="hamburger" src="img/hamburger.svg" alt="">
+                        </div>
+                        <div class="head-orion">
+                            <h1>Welcome to ORION Music Player</h1>
+                        </div>
+                        <!-- <div class="download xh">
+                            <h4>Downloaded Songs</h4>
+                        </div>
+
+                        <div class="install-app flex ">
+                            <img src="img/install.svg" class="xh" alt="install">
+                            <h4 class="xh">install app</h4>
+                        </div>
+                    </div>
+                    <div class="sign-log flex ">
+                        <h4 class="xh">Sign up</h4>
+                        <button>Login</button>
+                    </div> -->
+                    </div>
+            </nav>
+            <main class="right-area">
+                <div class="card-container">
+                    <div class="card-heading">
+                        <h4>ORION PLAYLIST</h4>
+                    </div>
+                    <div id="cards" class="cards">
+                    </div>
+                </div>
+
+                <div class="songplaybar">
+                    <div class="songupperbar">
+                        <div class="songinfo"> </div>
+                        <div class="songbuttons">
+                            <img id="previous" src="img/previousbut.svg" alt="previous" class="previous xhover">
+                            <img id="playx" src="img/songplay.svg" alt="play" class="play xhover">
+                            <img id="next" src="img/nextbut.svg" alt="next" class="next xhover">
+                        </div>
+                        <div class="info-vol">
+                            <div class="songtime"></div>
+                            <div class="volume-control">
+                                <img id="upvol" src="img/volume.svg" alt="Volume" class="volume-icon xhover">
+                                <input type="range" min="0" max="1" step="0.01" value="1" class="volume-slider xhover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="seekbar">
+                        <div id="progress" class="progress"></div>
+                        <div id="button" class="circle xhover"></div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
