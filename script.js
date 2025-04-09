@@ -46,6 +46,7 @@ async function getsongs(folder) {
         })
 
     })
+    return songs;
 }
 //this function is used for convert seconds to minutes
 function formatTime(seconds) {
@@ -113,7 +114,7 @@ async function displayAlbums() {
     //   For Click on card Button 
     Array.from(document.getElementsByClassName("card-box")).forEach(e => {
         e.addEventListener("click", async item => {
-            await getsongs(`songs/${item.currentTarget.dataset.folder}`);
+            await getsongs(`/songs/${item.currentTarget.dataset.folder}`);
             playMusic(songs[0])
         })
     })
